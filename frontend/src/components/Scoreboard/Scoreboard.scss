@@ -1,0 +1,23 @@
+/* src/components/Wordle/Scoreboard.scss */
+.scoreboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .scoreboard h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .scoreboard ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .scoreboard ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
