@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // Assuming Wordle component exists
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Wordle from '../Wordle/Wordle';
 
 const GameScreen = ({ setScores }) => {
@@ -12,7 +12,7 @@ const GameScreen = ({ setScores }) => {
   const [gameOver, setGameOver] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // Fetch word list from the backend
   useEffect(() => {
@@ -36,11 +36,11 @@ const GameScreen = ({ setScores }) => {
     fetchWordList();
   }, []);
 
-  const handleKeyPress = (letter) => {
-    if (currentGuess.length < 5 && !gameOver) {
-      setCurrentGuess((prevGuess) => prevGuess + letter);
-    }
-  };
+  // const handleKeyPress = (letter) => {
+  //   if (currentGuess.length < 5 && !gameOver) {
+  //     setCurrentGuess((prevGuess) => prevGuess + letter);
+  //   }
+  // };
 
   const handleSubmit = () => {
     if (currentGuess.length === 5 && !gameOver) {
