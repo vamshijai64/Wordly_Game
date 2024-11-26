@@ -19,7 +19,7 @@ const GameScreen = ({ setScores }) => {
     const fetchWordList = async () => {
       try {
         setLoading(true);
-        const response = await fetch("https://wordly-game-backend.onrender.com/api/wordlist");
+        const response = await fetch("https://wordly-game-backend.onrender.com");
         if (!response.ok) {
           throw new Error("Failed to fetch word list");
         }
