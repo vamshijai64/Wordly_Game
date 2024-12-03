@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import GoogleSignUp from './components/GoogleSignUp/GoogleSignUp';
+
  import Scoreboard from './components/Scoreboard/Scoreboard'; // Import Scoreboard
  import GameScreen from './components/GameScreen/GameScreen';
 
