@@ -21,8 +21,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<GoogleSignUp />} />
-        <Route path="/game" element={<GameScreen setScores={setScores} />} />
+     
+        <Route path="/" element={<GameScreen setScores={setScores} />} />
         <Route path="/scoreboard" element={<Scoreboard scores={scores} />} />
       </Routes>
     </BrowserRouter>
